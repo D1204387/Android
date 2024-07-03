@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         EditText temperatureEditView = (EditText)findViewById(R.id.temperature);
 
         int temperature = Integer.parseInt(temperatureEditView.getText().toString());
+
         int fTemperature = temperature * 9/ 5 + 32;
 
 
