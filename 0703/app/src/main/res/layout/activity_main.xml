@@ -10,10 +10,63 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="我的第一個APP!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="1166dp"
+        tools:layout_editor_absoluteY="1235dp" />
+
+    <LinearLayout
+        android:layout_width="3096dp"
+        android:layout_height="408dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="721dp"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="3096dp"
+        android:layout_height="995dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="1283dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="1355dp"
+        tools:layout_editor_absoluteY="1222dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="205dp"
+        android:layout_height="206dp"
+        app:srcCompat="@android:drawable/sym_action_call"
+        tools:layout_editor_absoluteX="440dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="656dp"
+        tools:layout_editor_absoluteY="305dp">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="576dp"
+        tools:layout_editor_absoluteY="301dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
