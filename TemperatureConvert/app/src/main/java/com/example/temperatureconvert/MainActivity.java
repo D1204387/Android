@@ -28,18 +28,24 @@ public class MainActivity extends AppCompatActivity {
 
     public void convertToC(View view){
 
-        Button convertToFButton = (Button)findViewById(R.id.convertToF);
+        Button convertToCButton = (Button)findViewById(R.id.convertToC);
         EditText temperatureEditView = (EditText)findViewById(R.id.temperature);
+        TextView resultView = (TextView)findViewById(R.id.resultView);
 
-        int temperature = Integer.parseInt(temperatureEditView.getText().toString());
-
-        int fTemperature = temperature * 9/ 5 + 32;
-
-
-
+        double fTemperature = Double.parseDouble(temperatureEditView.getText().toString());
+        double cTemperature = (fTemperature - 32 ) * 5/9;
+        resultView.setText(String.valueOf(cTemperature));
     }
 
     public void convertToF(View view){
+
+        Button convertToFButton = (Button)findViewById(R.id.convertToF);
+        EditText temperatureEditView = (EditText)findViewById(R.id.temperature);
+        TextView resultView = (TextView)findViewById(R.id.resultView);
+
+        double cTemperature = Double.parseDouble(temperatureEditView.getText().toString());
+        double fTemperature = cTemperature * 9/5 + 32;
+        resultView.setText(String.valueOf(fTemperature));
 
     }
 }

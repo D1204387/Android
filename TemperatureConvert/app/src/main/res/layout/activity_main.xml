@@ -25,8 +25,8 @@
         android:id="@+id/convertToF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="212dp"
         android:onClick="convertToF"
         android:text="攝氏轉華氏"
         android:textAlignment="center"
@@ -37,30 +37,22 @@
         android:id="@+id/convertToC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="308dp"
+        android:onClick="convertToC"
         android:text="華氏轉攝氏"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/fTemperature"
+        android:id="@+id/resultView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:text="華氏温度"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="156dp"
+        android:text="轉換後温度"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/convertToF"
-        tools:layout_editor_absoluteY="221dp" />
-
-    <TextView
-        android:id="@+id/cTemperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:text="攝氏温度"
-        android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/convertToC"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
