@@ -12,27 +12,55 @@
         android:id="@+id/temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="請輸入温度"
         android:inputType="number"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="124dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/convertToF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="258dp" />
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="208dp"
+        android:onClick="convertToF"
+        android:text="攝氏轉華氏"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/convertToC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="360dp" />
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="340dp"
+        android:text="華氏轉攝氏"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:text="華氏温度"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/convertToF"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <TextView
+        android:id="@+id/cTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:text="攝氏温度"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/convertToC"
+        tools:layout_editor_absoluteY="357dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
