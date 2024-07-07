@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         double fTemperature = Double.parseDouble(temperatureEditView.getText().toString());
         double cTemperature = (fTemperature - 32 ) * 5/9;
-        resultView.setText(String.valueOf(cTemperature));
+        resultView.setText(String.format("Result: %.2f °C",cTemperature));
     }
 
     public void convertToF(View view){
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         double cTemperature = Double.parseDouble(temperatureEditView.getText().toString());
         double fTemperature = cTemperature * 9/5 + 32;
-        resultView.setText(String.valueOf(fTemperature));
+        resultView.setText(String.format("Result: %.2f °F",fTemperature));
 
     }
 }
