@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "LayoutPractice"
 include(":app")
+include(":app")
  
