@@ -1,6 +1,7 @@
 package com.example.bankaccount;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +22,10 @@ public class BalanceActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void CalBalance(View view){
+
+    }
+
+
 }
