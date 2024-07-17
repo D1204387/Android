@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private double total;
     private ActivityResultLauncher<Intent> intentActivityResultLanucher;
-    private TextView value;
+    private TextView value n;
 
 
     @Override
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void deposit(View View){
 
-        EditText et_amt = (EditText) findViewById(R.id.amount);
-        double add = Double.parseDouble(et_amt.getText().toString());
+        EditText amount = (EditText) findViewById(R.id.amount);
+        double add = Double.parseDouble(amount.getText().toString());
 
         total = 0;
         total += add;
@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void withdraw(View View){
 
-        EditText et_amt = (EditText) findViewById(R.id.amount);
-        double deduct = Double.parseDouble(et_amt.getText().toString());
+        EditText amount = (EditText) findViewById(R.id.amount);
+        double deduct = Double.parseDouble(amount.getText().toString());
 
         total = 0;
         total -= deduct;

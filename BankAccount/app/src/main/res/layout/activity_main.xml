@@ -62,6 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="deposit"
                 android:text="存款" />
 
             <Button
@@ -70,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_weight="1"
+                android:onClick="withdraw"
                 android:text="提款" />
         </LinearLayout>
 
