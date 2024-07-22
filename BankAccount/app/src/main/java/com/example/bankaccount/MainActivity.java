@@ -74,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
                 TWDTotal += JtoTExchangeResult;
                 count = 0;
             }
+        } else if (TtoJExchangeResult != 0) {
+            double TtoJ_TWDAmount = data.getDoubleExtra("TtoJ_TWD", 0);
+            if (TWDTotal - TtoJ_TWDAmount < 0) {
+                count += 1;
+            } else {
+                TWDTotal -= TtoJ_TWDAmount;
+                JPYTotal += TtoJExchangeResult;
+                count = 0;
+            }
         }
 
         double UtoTExchangeResult = data.getDoubleExtra("UtoT_ExchangeResult", 0);

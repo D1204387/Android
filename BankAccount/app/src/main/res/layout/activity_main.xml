@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="GotoUSDExchange"
-                android:text="Button" />
+                android:text="美金換匯" />
 
             <Button
                 android:id="@+id/button5"
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="GotoJPYExchange"
-                android:text="Button" />
+                android:text="日幣換匯" />
         </LinearLayout>
 
         <LinearLayout
