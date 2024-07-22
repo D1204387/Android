@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="Go2TWDAccount"
+            android:onClick="GotoTWDAccount"
             android:text="新台幣存/提款" />
 
         <LinearLayout
@@ -122,22 +122,20 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="20dp"
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:onClick="Go2USDExchange"
-                android:text="美金換匯" />
+                android:onClick="GotoUSDExchange"
+                android:text="Button" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="20dp"
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:onClick="Go2JPYExchange"
-                android:text="日幣換匯" />
+                android:onClick="GotoJPYExchange"
+                android:text="Button" />
         </LinearLayout>
 
         <LinearLayout
