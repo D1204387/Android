@@ -51,5 +51,27 @@ public class MainActivity extends AppCompatActivity {
         Log.d("觀察方法", "onResume");
     }
 
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Log.d("觀察方法", "onStop");
+    }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.d("觀察方法", "onPause");
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.d("觀察方法", "onRestart");
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d("觀察方法", "onDestroy");
+    }
 }

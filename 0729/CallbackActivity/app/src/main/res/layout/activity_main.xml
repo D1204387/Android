@@ -22,12 +22,14 @@
             android:id="@+id/mapbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="GotoMap"
             android:text="map" />
 
         <Button
             android:id="@+id/finishbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="GotoFinish"
             android:text="finish" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
