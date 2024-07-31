@@ -35,15 +35,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="放大"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
 
     <Button
         android:id="@+id/smallButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="縮小"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
