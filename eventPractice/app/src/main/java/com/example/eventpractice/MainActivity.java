@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return true;
     }
 
-    @Override
+
     public boolean onTouch(View view, MotionEvent motionEvent) {
 
 
