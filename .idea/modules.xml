@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Android.iml" filepath="$PROJECT_DIR$/.idea/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ImplicitInten.iml" filepath="$PROJECT_DIR$/.idea/modules/ImplicitInten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ImplicitInten.app.unitTest.iml" />
     </modules>
   </component>
 </project>

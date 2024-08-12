@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookingApp</string>
+    <string-array name="items">
+        <item>食</item>
+        <item>衣</item>
+        <item>行</item>
+
+    </string-array>
+</resources>
