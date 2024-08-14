@@ -1,6 +1,8 @@
 package com.example.bmi;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onActivityResult(ActivityResult o) {
 
-                        if(o.getData() != null &&)
+                        if(o.getData() != null && o.getResultCode() == Activity.RESULT_OK){
+                            bmi = o.getData().getDoubleExtra("BMI",-1);
+                            updateUI();
+                        }
 
                     }
                 }
@@ -50,12 +55,39 @@ public class MainActivity extends AppCompatActivity {
     public void GotoCalculateBMI(View view){
 
         Intent intent = new Intent(this, CalculateBMIActivity.class);
-        startActivity(intent);
 
+        if(value != null){
+            value.setTextColor(Color.parseColor("#000000"));
+            description.setTextColor(Color.parseColor("#000000"));
+        }
+        intentActivityResultLauncher.launch(intent);
     }
 
     public void updateUI(){
         TextView result = (TextView) findViewById(R.id.Result);
         result.setText(String.valueOf(bmi));
+
+        if(bmi < 18.5){
+            value = (TextView) findViewById(R.id.thin_value);
+            description = (TextView) findViewById(R.id.thin_description);
+        } else if (bmi < 24) {
+            value = (TextView) findViewById(R.id.normal_value);
+            description = (TextView) findViewById(R.id.normal_description);
+        }else if (bmi < 27) {
+            value = (TextView) findViewById(R.id.heavy_value);
+            description = (TextView) findViewById(R.id.heavy_description);
+        }else if (bmi < 30) {
+            value = (TextView) findViewById(R.id.littlefat_value);
+            description = (TextView) findViewById(R.id.littlefat_description);
+        }else if (bmi < 35) {
+            value = (TextView) findViewById(R.id.middlefat_value);
+            description = (TextView) findViewById(R.id.middlefat_description);
+        }else{
+            value = (TextView) findViewById(R.id.toofat_value);
+            description = (TextView) findViewById(R.id.toofat_description);
+        }
+
+        value.setTextColor(Color.parseColor("#CC0000"));
+        description.setTextColor(Color.parseColor("#CC0000"));
     }
 }

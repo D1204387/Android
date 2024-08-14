@@ -5,12 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="CalBMI"
     tools:context=".CalculateBMIActivity">
 
     <LinearLayout
         android:layout_width="410dp"
         android:layout_height="649dp"
         android:gravity="center|top"
+        android:onClick="CalBMI"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +42,7 @@
             android:id="@+id/CalculateBMI"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
+            android:onClick="CalBMI"
             android:text="計算BMI" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
